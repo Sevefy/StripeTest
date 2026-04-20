@@ -13,3 +13,4 @@ class Item(models.Model):
         indexes = [
             models.Index(fields=["name"], name="name_idx")
         ]
+    

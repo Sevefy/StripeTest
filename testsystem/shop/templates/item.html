@@ -9,18 +9,15 @@
 </head>
 <body>
     <h2>Продукт {{ id }}</h2>
+    <h3>{{ name }}</h3>
     <div>
-        {{ name }}
-        <li>
-            <ul>
-                {{description}}
-            </ul>
-            <ul>
-                {{price}} р
-            </ul>
-        </li>
+        Описание:
+        <i> {{description}} </i>
     </div>
-    <button onclick="pressBuyButton()">
+    <br>
+    <b>Цена: {{price}} $</b>
+    <br>
+    <button onclick="pressBuyButton({{ id }})">
         Купить
     </button>
     
